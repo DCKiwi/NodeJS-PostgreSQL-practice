@@ -1,0 +1,14 @@
+{
+  "name": "nodejs-postgresql",
+  "version": "1.0.0",
+  "description": "NodeJS backend with PostgreSQL DB",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Cockerill",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^7.8.0"
+  }
+}
