@@ -10,6 +10,32 @@
   </head>
   <body>
     <h1>Node and PostgreSQL</h1>
-    <h2><%= data[0].id %></h2>
+    <table>
+      <caption>
+        Clothing inventory
+      </caption>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Item</th>
+          <th>Style</th>
+          <th>Size</th>
+          <th>Color</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <% for (var i=0; i < data.length; i++) { %>
+          <td><%= data[i].id %></td>
+          <td><%= data[i].item %></td>
+          <td><%= data[i].style %></td>
+          <td><%= data[i].size %></td>
+          <td><%= data[i].color %></td>
+          <td><%= data[i].quantity %></td>
+        </tr>
+        <%}%>
+      </tbody>
+    </table>
   </body>
 </html>
