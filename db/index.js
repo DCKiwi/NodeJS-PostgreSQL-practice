@@ -25,5 +25,6 @@ const client = new Client({
 client.connect();
 
 module.exports = {
-  query: (text, params) => pool.query(text, params)
+  pool,
+  client
 };
