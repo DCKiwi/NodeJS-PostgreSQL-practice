@@ -9,10 +9,6 @@ const app = express();
 // EJS Template engine
 app.set('view engine', 'ejs');
 
-// //Body parser middleware
-// app.use(bodyParser.urlencoded({ extended: false }));
-// app.use(bodyParser.json());
-
 view.then(q => console.log(q));
 
 app.get('/', (req, res) => {
